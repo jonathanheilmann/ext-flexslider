@@ -156,7 +156,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 						'type' => 'popup',
 						'title' => 'Link',
 						'icon' => 'link_popup.gif',
-						'script' => 'browse_links.php?mode=wizard',
+                        'module' => ['name' => 'wizard_link'],
 						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
 					)
 				)
@@ -186,7 +186,7 @@ if ($configuration['extendSubtitleByRTE'])	{
 			'icon' => 'wizard_rte2.gif',
 			'notNewRecords'=> 1,
 			'RTEonly' => 1,
-			'script' => 'wizard_rte.php',
+			'module' => ['name' => 'wizard_rte'],
 			'title' => 'LLL:EXT:cms/locallang_ttc.xml:bodytext.W.RTE',
 			'type' => 'script'
 		),
